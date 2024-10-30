@@ -1,0 +1,217 @@
+/* Utiliser le sélecteur * pour cibler tous les éléments */
+* {
+    box-sizing: border-box; /* Inclure les bordures et les marges dans le calcul de la taille de l'élément */
+}
+
+/* Ajouter une règle générale pour les tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Fusionner les bordures de la table */
+}
+
+body {
+    overflow: hidden;
+}
+
+.titre-fiche {
+    background : #d6e3bc;
+    font-weight: bold;
+    display: block; /* Modifier display à block */
+    width: 280px;
+    padding-top: 2px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 0;
+    z-index: 2; /* Utiliser margin-top pour l'espacement au lieu de position:absolute; top:0; */
+}
+
+.num-fiche {
+    font-weight: bold;
+    margin-top: 2px; /* Utiliser margin-top pour l'espacement au lieu de position:absolute; top:5%; */
+    margin-left: 27%; /* Utiliser margin-left pour l'espacement au lieu de position:absolute; left:15%; */
+}
+
+.etablissement {
+    font-weight: bold;
+    margin-left: 35%; /* Utiliser margin-left pour l'espacement au lieu de position:absolute; left:22%; */
+    margin-top: -10%;
+    font-size: 10px; /* Utiliser margin-top pour l'espacement au lieu de position:absolute; top:0; */
+}
+
+.logo-voillaume {
+    margin-top: 2px;
+    width: 25px;
+    height: 25px;
+}
+
+.logo-voillaume img {
+    transform: scale(0.5); /* Redimensionner l'image à 50% de sa taille d'origine */
+    transform-origin: 0 0; /* Définir le point d'origine de la transformation */
+    z-index: 0; 
+}
+.tab-1 {
+    margin-top: -1%; /* Utiliser margin-top pour l'espacement au lieu de position:absolute; top:13%; */
+    margin-bottom: 0;
+}
+
+.tab-1 table, .tab-1 tr, .tab-1 td {
+    border: 1.5px solid;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+}
+
+.tab-1 .first {
+    background: #d6e3bc;
+    font-weight: bold;
+}
+
+.bloc-photo {
+    margin-left: 55%; /* Utiliser margin-left pour l'espacement au lieu de position:absolute; left:40%; */
+    margin-top: -31%; /* Utiliser margin-top pour l'espacement au lieu de position:absolute; top:-1%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-titre {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 32%;
+}
+
+.photo {
+    border: 1.5px solid black;
+    width: 550px;
+    height: 250px;
+}
+
+.midlign {
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
+    background: #d6e3bc;
+}
+
+.tab-2 {
+    margin-top: 5px; /* Utiliser margin-top pour l'espacement au lieu de position:absolute; top:44%; */
+}
+
+.tab-2 table, .tab-2 tr {
+    border: 1.5px solid;
+    text-align: center;
+    width: 100%; /* Modifier width à 100% */
+    height: 30px;
+    font-size: 10px;
+}
+
+.tab-2 td {
+    border: 1.5px solid;
+    text-align: center;
+}
+
+.niveau {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.choisi {
+    background: #b7e1cd;
+}
+
+.head {
+    font-weight: bold;
+}
+
+.info {
+    color: blue; 
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.info {
+    border-color: black !important; 
+}
+
+.pied {
+    font-weight: bold;
+    display: flex; /* Utiliser Flexbox pour aligner horizontalement */
+    justify-content: space-between; /* Espacer les éléments sur toute la longueur */
+    align-items: center; /* Centrer verticalement les éléments */
+    width: 100%; /* Utiliser toute la largeur disponible */
+    margin-top: 10px; /* Espacement par rapport à .tab-2 */
+    font-size: 12px;
+}
+
+.pied > div {
+    flex: 1; /* Utiliser un espace équitable pour chaque div */
+}
+
+#bareme {
+    color: red;
+    font-weight: normal;
+}
+
+#vert {
+    background: #00b050;
+    font-size: 17px;
+}
+
+#jaune {
+    background: #ffc000;
+    font-size: 17px;
+}
+
+#rouge {
+    background: red;
+    font-size: 17px;
+}
+
+#rouge-fonce {
+    background: #c00000;
+    font-size: 17px;
+}
+
+#total {
+    color: black;
+}
+
+#date-risque {
+    padding-left: 10px !important;
+    background: #bfbfbf;
+}
+
+#emetteur {
+    background: #b7e1cd;
+}
+
+#total span:first-child{
+    margin-right: 100px;
+    padding-left: 100px;
+}
+
+.title-cell {
+    font-weight: bold;
+}
+
+.pied .date {
+    margin-top: 2%;
+}
+
+.pied .auteur {
+    margin-left: 40%;
+    margin-top: -4%;
+}
+
+.pied .note {
+    margin-left: 84%;
+    margin-top: -4.75%;
+}
+
+.image{
+    width: 100%; /* La largeur de l'image sera égale à 100% de la largeur de son conteneur */
+    height: 300px; /* La hauteur de l'image sera égale à 100% de la hauteur de son conteneur */
+    object-fit: cover; /* L'image est étirée ou compressée pour remplir la div tout en conservant son ratio d'aspect */
+}
